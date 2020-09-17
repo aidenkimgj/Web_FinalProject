@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dodgy Brakes Car Rentals - Rental Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@1,700&family=Rowdies&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style2.css">
+</head>
+
+<body>
+    <header>
+        <!-- Title, logo, display current time & date-->
+        <div class="logo">
+            <img src="assets/images/logo.png" alt="Rental Logo">
+            <h1>Dodgy Brakes Car Rental</h1>
+        </div>
+        
+        <div id="currentDate"></div>
+    </header>
+
+    <div class="container">
+        <!--Search box for inding clients-->
+        <section id="client_search">
+            <label for="">Search Client</label>
+            <input type="text" name="input_client_search" id="input_client_search">
+        </section>
+        <!-- section for displaying results-->
+        <section id="client_results"></section>
+
+        <!-- -->
+        <section id="rental_form">
+            <h2>Client Rental Form</h2>
+            <div>
+                <label for="c_firtname">First Name</label>
+                <input type="text" name="c_firtname" id="c_firstname" disabled="true">
+            </div>
+            <div>
+                <label for="c_lastname">Last Name</label>
+                <input type="text" name="c_lastname" id="c_lastname" disabled="true">
+            </div>
+            <div>
+                <label for="c_address">Address</label>
+                <input type="text" name="c_address" id="c_address" disabled="true">
+            </div>
+            <div>
+                <label for="c_state_prov">State/Province</label>
+                <input type="text" name="c_state_prov" id="c_state_prov" disabled="true">
+            </div>
+            <div>
+                <label for="c_email">Email</label>
+                <input type="text" name="c_email" id="c_email" disabled="true">
+            </div>
+            <div>
+                <label for="c_phone">Phone</label>
+                <input type="text" name="c_phone" id="c_phone" disabled="true">
+            </div>
+            <div class="vtype">
+                <h4>Vehicle Type</h4>
+                <label>
+                    <img src="" alt="">
+                    <input type="radio" name="vehicle_type[]" value="Compact" disabled="true">
+                    <span>Compact</span>
+                </label>
+                <label>
+                    <img src="" alt="">
+                    <input type="radio" name="vehicle_type[]" value="Mid-Size" disabled="true">
+                    <span>Mid-Size</span>
+                </label>
+                <label>
+                    <img src="" alt="">
+                    <input type="radio" name="vehicle_type[]" value="Luxury" disabled="true">
+                    <span>Luxury</span>
+                </label>
+                <label>
+                    <img src="" alt="">
+                    <input type="radio" name="vehicle_type[]" value="Van/Truck" disabled="true">
+                    <span>Van/Truck</span>
+                </label>
+            </div>
+            <div class="voption">
+                <h4>Vehicle Options</h4>
+                <label>
+                    <input type="checkbox" name="vehicle_options[]" value="roof_rack" disabled="true">
+                    <span>Roof Rack / Bicycle Rack - $5/day</span>
+                </label>
+                <label>
+                    <input type="checkbox" name="vehicle_options[]" value="gps" disabled="true">
+                    <span>GPS - $10/day</span>
+                </label>
+                <label>
+                    <input type="checkbox" name="vehicle_options[]" value="child_seat" disabled="true">
+                    <span>Child Seat - Free</span>
+                </label>
+            </div>
+            <div>
+                <h4>Number of Days for Rental</h4>
+                <input type="number" name="vehicle_days" id="vehicle_days" min="1" max="30" disabled="true">
+            </div>
+            <div>
+                <button id="submit_form" onclick="submitForm();" disabled="true">Submit Rental Order Form</button>
+            </div>
+        </section>
+        <!-- client rental order form receipt display-->
+        <section id="rental_display"></section>
+
+    </div>
+
+    <footer>
+        <h4>Copyright © Dodgy Brakes Car Rental</h4>
+    </footer>
+    <script type="text/javascript" src="./assets/scripts/rental.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Searching Employee Information</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lobster&family=Patua+One&family=Source+Code+Pro:wght@600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Searching Employee Information</h1>
+    </header>
+
+
+    <div class="container">
+
+        <div class="search_box">
+            <label for="searchByLastName">Employee Last Name</label>
+            <input type="text" name="searchByLastName" id="searchByLastName">
+        </div>
+
+        <div class="search_box">
+            <label for="searchById">Employee ID</label>
+            <input type="number" name="searchById" id="searchById">
+        </div>
+
+        <div class="search_box">
+            <label for="searchByAddress">Employee Address</label>
+            <input type="text" name="searchByAddress" id="searchByAddress">
+        </div>
+
+
+
+    </div>
+    <div id="search_results"></div>
+
+
+    <script type="text/javascript" src="./assets/scripts/search_employees.js"></script>
+</body>
+
+</html>
